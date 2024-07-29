@@ -1,0 +1,17 @@
+syntax = "proto3";
+package developer.developer;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "developer/developer/params.proto";
+
+option go_package = "developer/x/developer/types";
+
+// GenesisState defines the developer module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}
