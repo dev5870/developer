@@ -1,17 +1,11 @@
 version: 1
 accounts:
-  - name: dev_staking
+  - address: dev_main
     coins:
       - "180000000000000udev"
-  - name: dev_foundation
-    coins:
-      - "50000000000000udev"
 client:
   openapi:
     path: docs/static/openapi.yml
-validators:
-  - name: dev_staking
-    bonded: "170000000000000udev"
 genesis:
   app_state:
     bank:
