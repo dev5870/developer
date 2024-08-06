@@ -1,8 +1,6 @@
 version: 1
 accounts:
-  - address: dev_main
-    coins:
-      - "180000000000000udev"
+  - name: dev_foundation
 client:
   openapi:
     path: docs/static/openapi.yml
@@ -10,7 +8,7 @@ genesis:
   app_state:
     bank:
       denom_metadata:
-        - description: ""
+        - description: "Native token on Developer Network"
           denom_units:
             - denom: "udev"
               exponent: "0"
